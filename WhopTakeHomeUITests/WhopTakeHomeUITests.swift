@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import WhopTakeHome
 
 final class WhopTakeHomeUITests: XCTestCase {
 

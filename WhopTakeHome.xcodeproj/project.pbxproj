@@ -14,6 +14,28 @@
 		52FF9C7F2C62D8D40050BA12 /* WhopTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C7E2C62D8D40050BA12 /* WhopTakeHomeTests.swift */; };
 		52FF9C892C62D8D40050BA12 /* WhopTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C882C62D8D40050BA12 /* WhopTakeHomeUITests.swift */; };
 		52FF9C8B2C62D8D40050BA12 /* WhopTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C8A2C62D8D40050BA12 /* WhopTakeHomeUITestsLaunchTests.swift */; };
+		52FF9C992C62DA490050BA12 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C982C62DA490050BA12 /* ListItem.swift */; };
+		52FF9C9C2C62DFA20050BA12 /* WhopWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C9B2C62DFA20050BA12 /* WhopWebView.swift */; };
+		52FF9CA02C62E2B10050BA12 /* WhopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C9F2C62E2B00050BA12 /* WhopItemView.swift */; };
+		52FF9CA22C62E3730050BA12 /* WhopFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CA12C62E3730050BA12 /* WhopFolderView.swift */; };
+		52FF9CA42C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
+		52FF9CA52C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
+		52FF9CA62C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
+		52FF9CAD2C62F2B40050BA12 /* WhopListItemLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */; };
+		52FF9CAF2C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */; };
+		52FF9CB02C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */; };
+		52FF9CB12C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */; };
+		52FF9CB42C62FCAF0050BA12 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */; };
+		52FF9CB52C62FCAF0050BA12 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */; };
+		52FF9CB62C62FCAF0050BA12 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */; };
+		52FF9CB82C62FDB00050BA12 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */; };
+		52FF9CB92C62FDB00050BA12 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */; };
+		52FF9CBA2C62FDB00050BA12 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */; };
+		52FF9CBC2C62FE550050BA12 /* WhopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */; };
+		52FF9CBD2C62FE550050BA12 /* WhopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */; };
+		52FF9CBE2C62FE550050BA12 /* WhopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */; };
+		52FF9CBF2C6300C60050BA12 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C982C62DA490050BA12 /* ListItem.swift */; };
+		52FF9CC02C6300C90050BA12 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C982C62DA490050BA12 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +66,16 @@
 		52FF9C842C62D8D40050BA12 /* WhopTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhopTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FF9C882C62D8D40050BA12 /* WhopTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopTakeHomeUITests.swift; sourceTree = "<group>"; };
 		52FF9C8A2C62D8D40050BA12 /* WhopTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52FF9C982C62DA490050BA12 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		52FF9C9B2C62DFA20050BA12 /* WhopWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopWebView.swift; sourceTree = "<group>"; };
+		52FF9C9F2C62E2B00050BA12 /* WhopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopItemView.swift; sourceTree = "<group>"; };
+		52FF9CA12C62E3730050BA12 /* WhopFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopFolderView.swift; sourceTree = "<group>"; };
+		52FF9CA32C62EE050050BA12 /* mock_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_data.json; sourceTree = "<group>"; };
+		52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopListItemLoaderTests.swift; sourceTree = "<group>"; };
+		52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopExpandableListItemView.swift; sourceTree = "<group>"; };
+		52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +127,13 @@
 			isa = PBXGroup;
 			children = (
 				52FF9C6D2C62D8D10050BA12 /* WhopTakeHomeApp.swift */,
-				52FF9C6F2C62D8D10050BA12 /* ContentView.swift */,
+				52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */,
+				52FF9CA72C62EE950050BA12 /* Service */,
+				52FF9C9A2C62DDBD0050BA12 /* Views */,
+				52FF9C972C62D9EE0050BA12 /* Models */,
 				52FF9C712C62D8D30050BA12 /* Assets.xcassets */,
+				52FF9CB22C62FC9A0050BA12 /* Extension */,
+				52FF9CA32C62EE050050BA12 /* mock_data.json */,
 				52FF9C732C62D8D30050BA12 /* Preview Content */,
 			);
 			path = WhopTakeHome;
@@ -114,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				52FF9C7E2C62D8D40050BA12 /* WhopTakeHomeTests.swift */,
+				52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */,
 			);
 			path = WhopTakeHomeTests;
 			sourceTree = "<group>";
@@ -125,6 +163,42 @@
 				52FF9C8A2C62D8D40050BA12 /* WhopTakeHomeUITestsLaunchTests.swift */,
 			);
 			path = WhopTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+		52FF9C972C62D9EE0050BA12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52FF9C982C62DA490050BA12 /* ListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		52FF9C9A2C62DDBD0050BA12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52FF9C6F2C62D8D10050BA12 /* ContentView.swift */,
+				52FF9C9B2C62DFA20050BA12 /* WhopWebView.swift */,
+				52FF9C9F2C62E2B00050BA12 /* WhopItemView.swift */,
+				52FF9CA12C62E3730050BA12 /* WhopFolderView.swift */,
+				52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52FF9CA72C62EE950050BA12 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		52FF9CB22C62FC9A0050BA12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */,
+				52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +307,7 @@
 			files = (
 				52FF9C752C62D8D30050BA12 /* Preview Assets.xcassets in Resources */,
 				52FF9C722C62D8D30050BA12 /* Assets.xcassets in Resources */,
+				52FF9CA42C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CA52C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CA62C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CB82C62FDB00050BA12 /* Bundle+Extension.swift in Sources */,
+				52FF9CB42C62FCAF0050BA12 /* String+Extension.swift in Sources */,
+				52FF9C992C62DA490050BA12 /* ListItem.swift in Sources */,
 				52FF9C702C62D8D10050BA12 /* ContentView.swift in Sources */,
 				52FF9C6E2C62D8D10050BA12 /* WhopTakeHomeApp.swift in Sources */,
+				52FF9C9C2C62DFA20050BA12 /* WhopWebView.swift in Sources */,
+				52FF9CBC2C62FE550050BA12 /* WhopListViewModel.swift in Sources */,
+				52FF9CA22C62E3730050BA12 /* WhopFolderView.swift in Sources */,
+				52FF9CAF2C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */,
+				52FF9CA02C62E2B10050BA12 /* WhopItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +351,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CBD2C62FE550050BA12 /* WhopListViewModel.swift in Sources */,
+				52FF9CBF2C6300C60050BA12 /* ListItem.swift in Sources */,
 				52FF9C7F2C62D8D40050BA12 /* WhopTakeHomeTests.swift in Sources */,
+				52FF9CB92C62FDB00050BA12 /* Bundle+Extension.swift in Sources */,
+				52FF9CAD2C62F2B40050BA12 /* WhopListItemLoaderTests.swift in Sources */,
+				52FF9CB02C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */,
+				52FF9CB52C62FCAF0050BA12 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CBE2C62FE550050BA12 /* WhopListViewModel.swift in Sources */,
+				52FF9CC02C6300C90050BA12 /* ListItem.swift in Sources */,
+				52FF9CBA2C62FDB00050BA12 /* Bundle+Extension.swift in Sources */,
 				52FF9C8B2C62D8D40050BA12 /* WhopTakeHomeUITestsLaunchTests.swift in Sources */,
+				52FF9CB12C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */,
+				52FF9CB62C62FCAF0050BA12 /* String+Extension.swift in Sources */,
 				52FF9C892C62D8D40050BA12 /* WhopTakeHomeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

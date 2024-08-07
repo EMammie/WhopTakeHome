@@ -1,5 +1,5 @@
 //
-//  WhopListView.swift
+//  WhopitemView.swift
 //  WhopTakeHome
 //
 //  Created by  Eugene Mammie on 8/6/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WhopListView: View {
+struct WhopItemView: View {
     @State var listItem : ListItem
     var body: some View {
         VStack {
@@ -18,5 +18,5 @@ struct WhopListView: View {
 }
 
 #Preview {
-    WhopListView(listItem: ListItem.listItem)
+    WhopItemView(listItem: ListItem.listItem)
 }
