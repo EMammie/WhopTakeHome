@@ -12,8 +12,12 @@ struct WhopItemView: View {
     var body: some View {
         VStack {
             Text(listItem.name)
-            Text(String(listItem.id.uuidString))
-        }
+            HStack {
+                Text("✨")
+                Text(String(listItem.id.uuidString))
+            }
+            
+        }.background(.cyan)
     }
 }
 

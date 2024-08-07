@@ -17,8 +17,8 @@ struct WhopExpandableListItemView: View {
         var thumbnailViewBackgroundColor: Color = .blue.opacity(0.8)
         var expandedViewBackgroundColor: Color = .blue
         
-        var thumbnailViewCornerRadius: CGFloat = 20
-        var expandedViewCornerRadius: CGFloat = 20
+        var thumbnailViewCornerRadius: CGFloat = 5
+        var expandedViewCornerRadius: CGFloat = 5
         var body: some View {
             ZStack {
                 if !show {

@@ -11,7 +11,7 @@ struct WhopFolderView: View {
     @State var folder : ListItem
     var body: some View {
         VStack {
-            Text(folder.name)
+            Text("📂 \(folder.name)")
             Text(folder.id.uuidString)
         }
         .padding()

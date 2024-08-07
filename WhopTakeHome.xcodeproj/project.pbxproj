@@ -18,9 +18,6 @@
 		52FF9C9C2C62DFA20050BA12 /* WhopWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C9B2C62DFA20050BA12 /* WhopWebView.swift */; };
 		52FF9CA02C62E2B10050BA12 /* WhopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C9F2C62E2B00050BA12 /* WhopItemView.swift */; };
 		52FF9CA22C62E3730050BA12 /* WhopFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CA12C62E3730050BA12 /* WhopFolderView.swift */; };
-		52FF9CA42C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
-		52FF9CA52C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
-		52FF9CA62C62EE060050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CA32C62EE050050BA12 /* mock_data.json */; };
 		52FF9CAD2C62F2B40050BA12 /* WhopListItemLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */; };
 		52FF9CAF2C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */; };
 		52FF9CB02C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */; };
@@ -70,7 +67,6 @@
 		52FF9C9B2C62DFA20050BA12 /* WhopWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopWebView.swift; sourceTree = "<group>"; };
 		52FF9C9F2C62E2B00050BA12 /* WhopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopItemView.swift; sourceTree = "<group>"; };
 		52FF9CA12C62E3730050BA12 /* WhopFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopFolderView.swift; sourceTree = "<group>"; };
-		52FF9CA32C62EE050050BA12 /* mock_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_data.json; sourceTree = "<group>"; };
 		52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopListItemLoaderTests.swift; sourceTree = "<group>"; };
 		52FF9CAE2C62F4550050BA12 /* WhopExpandableListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopExpandableListItemView.swift; sourceTree = "<group>"; };
 		52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -127,13 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				52FF9C6D2C62D8D10050BA12 /* WhopTakeHomeApp.swift */,
-				52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */,
 				52FF9CA72C62EE950050BA12 /* Service */,
 				52FF9C9A2C62DDBD0050BA12 /* Views */,
 				52FF9C972C62D9EE0050BA12 /* Models */,
 				52FF9C712C62D8D30050BA12 /* Assets.xcassets */,
 				52FF9CB22C62FC9A0050BA12 /* Extension */,
-				52FF9CA32C62EE050050BA12 /* mock_data.json */,
 				52FF9C732C62D8D30050BA12 /* Preview Content */,
 			);
 			path = WhopTakeHome;
@@ -188,6 +182,7 @@
 		52FF9CA72C62EE950050BA12 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -307,7 +302,6 @@
 			files = (
 				52FF9C752C62D8D30050BA12 /* Preview Assets.xcassets in Resources */,
 				52FF9C722C62D8D30050BA12 /* Assets.xcassets in Resources */,
-				52FF9CA42C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FF9CA52C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +316,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FF9CA62C62EE060050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

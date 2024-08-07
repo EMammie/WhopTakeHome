@@ -22,6 +22,12 @@ indirect enum ListItem: Identifiable {
     }
     case listItem
     case folder(listitems: [ListItem])
+    
+    
+    enum TypeEnum: String, Codable {
+        case folder = "folder"
+        case listItem = "listItem"
+    }
 }
 
 extension ListItem: Hashable, Decodable  {

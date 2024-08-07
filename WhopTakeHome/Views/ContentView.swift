@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var items = [ListItem.listItem,
-                        ListItem.listItem,
-                        ListItem.folder(listitems: [ListItem.listItem,ListItem.listItem])]
-    
-    @State private var isLoading = false
-    @State private var isFinished = false
-    @State var vm : WhopListViewModel
+    @ObservedObject var vm : WhopListViewModel
     
     var body: some View {
         NavigationStack{
-            List(items) { item in
+            List(vm.items) { item in
                 switch item {
                     case .listItem :
                         WhopItemView(listItem: item)
@@ -38,13 +32,14 @@ struct ContentView: View {
                         }
                     }))
                 }
-                if !isFinished {
+                if !vm.isFinished {
                   ProgressView()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .foregroundColor(.black)
                     .foregroundColor(.red)
                     .onAppear {
-                      loadMoreContent()
+                        vm.load()
+                        loadMoreContent()
                     }
                 }
                 
@@ -53,7 +48,8 @@ struct ContentView: View {
             .navigationDestination(for: ListItem.self) { item in
                 switch item {
                 case .folder(listitems: _):
-                    Rectangle()
+                    WhopWebView(url: item.url)
+                        .edgesIgnoringSafeArea(.all)
                 case .listItem:
                     WhopWebView(url: item.url)
                                 .edgesIgnoringSafeArea(.all)
@@ -64,16 +60,15 @@ struct ContentView: View {
     }
     
     func loadMoreContent() {
-        if !isLoading {
-          isLoading = true
+        if !vm.isLoading {
+            vm.isLoading = true
           // This simulates an asynchronus call
           DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            //let moreNumbers = numbers.count + 1...numbers.count + 20
-           // numbers.append(contentsOf: moreNumbers)
-            isLoading = false
-//            if numbers.count > 250 {
-              isFinished = true
-//            }
+
+              vm.isLoading = false
+
+              vm.isFinished = true
+
           }
         }
       }

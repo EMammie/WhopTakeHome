@@ -22,7 +22,6 @@ final class WhopListItemLoaderTests: XCTestCase {
         let sut = WhopListViewModel()
         XCTAssertNotNil(sut.load())
         XCTAssert(sut.items.count > 0)
-
     }
 
     func testPerformanceExample() throws {
