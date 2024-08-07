@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class WhopListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isFinished = false
