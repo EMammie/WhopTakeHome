@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct WhopFolderView: View {
-    @State var folder : ListItem
+    @State var whopFolder : WhopListItem
+    
     var body: some View {
         VStack {
-            Text("📂 \(folder.name)")
-            Text(folder.id.uuidString)
+            Text("📂 : \(whopFolder.name)")
         }
         .padding()
     }
 }
 
 #Preview {
-    WhopFolderView(folder: .folder(listitems: [ListItem.listItem]))
+    WhopFolderView(whopFolder: WhopListItem.fixture(name: " Whop Folder", type:.folder,listitems: [.fixture(),.fixture()]))
+    
 }

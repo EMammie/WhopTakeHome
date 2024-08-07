@@ -12,28 +12,52 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack{
-            List(vm.items) { item in
-                switch item {
-                    case .listItem :
-                        WhopItemView(listItem: item)
-                            .background {
-                                NavigationLink(value: item){}
+            List($vm.whopItems, children: \.listitems) { item in
+                let anItem = item.wrappedValue
+               
+                switch anItem.type {
+                case .folder:
+                    VStack {
+                        Text("📂 Folder : \(anItem.name)")
+                    }
+                case .listItem:
+                    VStack {
+                        HStack {
+                            Text("✨ Item ")
+                            Text(":\(anItem.name)")
                         }
-                    case .folder(listitems: let folderItems ):
-
-                    WhopExpandableListItemView(thumbnail:
-                                                WhopThumbnailView(content: {
-                        WhopFolderView(folder:item)
-                    }), expanded: WhopExpandedView(content: {
-                        VStack{
-                            ForEach(folderItems){ item in
-                                Text("📂 : \(item.name)")
-                            }
-                        }
-                    }))
+                        
+                    }
+                    .background(.cyan.opacity(0.1))
+                    .background {
+                                                    NavigationLink(value: anItem){}
+                                            }
+                    
                 }
-                if !vm.isFinished {
-                  ProgressView()
+                
+                /* Custom Expanded View
+                 
+                                switch anItem.type {
+                                    case .listItem :
+                                    WhopItemView(whopListItem: anItem)
+                                            .background {
+                                                NavigationLink(value: anItem){}
+                                        }
+                                case .folder:
+                
+                                    WhopExpandableListItemView(thumbnail:
+                                                                WhopThumbnailView(content: {
+                                        WhopFolderView(folder:item)
+                                    }), expanded: WhopExpandedView(content: {
+                                        VStack{
+                                            ForEach(anItem.listitems){ item in
+                                                Text("📂 : \(item.name)")
+                                            }
+                                        }
+                                    })) */
+            
+            if !vm.isFinished {
+                ProgressView()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .foregroundColor(.black)
                     .foregroundColor(.red)
@@ -41,13 +65,13 @@ struct ContentView: View {
                         vm.load()
                         loadMoreContent()
                     }
-                }
-                
+            }
+    
             }
             .listStyle(.plain)
-            .navigationDestination(for: ListItem.self) { item in
-                switch item {
-                case .folder(listitems: _):
+            .navigationDestination(for: WhopListItem.self) { item in
+                switch item.type {
+                case .folder:
                     WhopWebView(url: item.url)
                         .edgesIgnoringSafeArea(.all)
                 case .listItem:
@@ -62,14 +86,10 @@ struct ContentView: View {
     func loadMoreContent() {
         if !vm.isLoading {
             vm.isLoading = true
+            
+            vm.load()
           // This simulates an asynchronus call
-          DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
 
-              vm.isLoading = false
-
-              vm.isFinished = true
-
-          }
         }
       }
     

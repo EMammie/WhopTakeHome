@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct WhopItemView: View {
-    @State var listItem : ListItem
+    //@State var listItem : ListItem
+    @State var whopListItem : WhopListItem
+
     var body: some View {
         VStack {
-            Text(listItem.name)
+            Text(whopListItem.name)
             HStack {
                 Text("✨")
-                Text(String(listItem.id.uuidString))
+                Text(String(whopListItem.id.uuidString))
             }
             
         }.background(.cyan)
@@ -22,5 +24,5 @@ struct WhopItemView: View {
 }
 
 #Preview {
-    WhopItemView(listItem: ListItem.listItem)
+    WhopItemView(whopListItem: WhopListItem.fixture())
 }

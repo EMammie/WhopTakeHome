@@ -7,16 +7,19 @@
 
 import Foundation
 
-class WhopListViewModel : ObservableObject {
+
+
+class WhopListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var isFinished = false
-    @Published var items: [ListItem] = [ListItem.listItem,
-                                                           ListItem.listItem,
-                                                           ListItem.folder(listitems: [ListItem.listItem,ListItem.listItem])]
-    
-    func load () {
+
+    @Published var whopItems: [WhopListItem] = [.fixture(), .fixture(),
+                                                .fixture(type: .folder, listitems: [.fixture()])]
+    @MainActor
+    func load() {
         DispatchQueue.global(qos: .background).async {
-            _ = Bundle.main.decodeable(fileName: "mock_data_a.json")
+            _ = Bundle.main.decodeable(fileName: "mock_data.json")
+                .receive(on: DispatchQueue.main)
                 .sink(receiveCompletion: { completion in
                     switch completion {
                     case .finished:
@@ -24,10 +27,12 @@ class WhopListViewModel : ObservableObject {
                     case .failure(let error):
                         print("Error: \(error.localizedDescription)")
                     }
-                }, receiveValue: { (response: ListItemResponse ) in
-                    self.items = response.list
+                }, receiveValue: { (response: WhopListResponse) in
+                    self.isLoading = false
+
+                    self.isFinished = true
+                    self.whopItems = response.list
                 })
         }
     }
-    
 }

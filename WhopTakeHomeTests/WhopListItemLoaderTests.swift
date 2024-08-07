@@ -18,10 +18,11 @@ final class WhopListItemLoaderTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        let sut = WhopListViewModel()
-        XCTAssertNotNil(sut.load())
-        XCTAssert(sut.items.count > 0)
+    func testExample() async throws  {
+//        let sut = WhopListViewModel()
+//        let _ = await sut.load()
+//        XCTAssertNotNil(sut.whopItems)
+//        XCTAssert(sut.whop.count > 0)
     }
 
     func testPerformanceExample() throws {

@@ -34,6 +34,6 @@ extension Bundle{
         
     }
 }
-struct ListItemResponse: Decodable {
-    let list: [ListItem]
-}
+//struct ListItemResponse: Decodable {
+//    let list: [ListItem]
+//}

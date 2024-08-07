@@ -33,6 +33,10 @@
 		52FF9CBE2C62FE550050BA12 /* WhopListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */; };
 		52FF9CBF2C6300C60050BA12 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C982C62DA490050BA12 /* ListItem.swift */; };
 		52FF9CC02C6300C90050BA12 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9C982C62DA490050BA12 /* ListItem.swift */; };
+		52FF9CC42C631A900050BA12 /* WhopListItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF9CC32C631A900050BA12 /* WhopListItemModelTests.swift */; };
+		52FF9CC62C6328430050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CC52C6328430050BA12 /* mock_data.json */; };
+		52FF9CC72C6328E80050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CC52C6328430050BA12 /* mock_data.json */; };
+		52FF9CC82C6328E90050BA12 /* mock_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52FF9CC52C6328430050BA12 /* mock_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,8 @@
 		52FF9CB32C62FCAF0050BA12 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		52FF9CB72C62FDB00050BA12 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		52FF9CBB2C62FE550050BA12 /* WhopListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopListViewModel.swift; sourceTree = "<group>"; };
+		52FF9CC32C631A900050BA12 /* WhopListItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhopListItemModelTests.swift; sourceTree = "<group>"; };
+		52FF9CC52C6328430050BA12 /* mock_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 				52FF9C9A2C62DDBD0050BA12 /* Views */,
 				52FF9C972C62D9EE0050BA12 /* Models */,
 				52FF9C712C62D8D30050BA12 /* Assets.xcassets */,
+				52FF9CC52C6328430050BA12 /* mock_data.json */,
 				52FF9CB22C62FC9A0050BA12 /* Extension */,
 				52FF9C732C62D8D30050BA12 /* Preview Content */,
 			);
@@ -145,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				52FF9C7E2C62D8D40050BA12 /* WhopTakeHomeTests.swift */,
+				52FF9CC32C631A900050BA12 /* WhopListItemModelTests.swift */,
 				52FF9CAC2C62F2B40050BA12 /* WhopListItemLoaderTests.swift */,
 			);
 			path = WhopTakeHomeTests;
@@ -302,6 +310,7 @@
 			files = (
 				52FF9C752C62D8D30050BA12 /* Preview Assets.xcassets in Resources */,
 				52FF9C722C62D8D30050BA12 /* Assets.xcassets in Resources */,
+				52FF9CC62C6328430050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CC72C6328E80050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF9CC82C6328E90050BA12 /* mock_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +358,7 @@
 				52FF9CBF2C6300C60050BA12 /* ListItem.swift in Sources */,
 				52FF9C7F2C62D8D40050BA12 /* WhopTakeHomeTests.swift in Sources */,
 				52FF9CB92C62FDB00050BA12 /* Bundle+Extension.swift in Sources */,
+				52FF9CC42C631A900050BA12 /* WhopListItemModelTests.swift in Sources */,
 				52FF9CAD2C62F2B40050BA12 /* WhopListItemLoaderTests.swift in Sources */,
 				52FF9CB02C62F4550050BA12 /* WhopExpandableListItemView.swift in Sources */,
 				52FF9CB52C62FCAF0050BA12 /* String+Extension.swift in Sources */,
